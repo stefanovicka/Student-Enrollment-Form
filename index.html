@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Enrollment Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Student Enrollment Form</h2>
+            <form id="empform" method="post">
+            <div class="form-group">
+                <label for="rollno" class="form-label">Roll No : </label>
+                <input type="number" name="rollno" id="rollno" required />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="name">Full Name : </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-group">
+                <label for="class" class="form-label">Class : </label>
+                <input type="text" name="class" id="class" required>
+            </div>
+            <div class="form-date">
+                <label for="BirthDate" class="form-label">Birth Date [mm-dd-yyyy] : </label>
+                <input type="text" id="BirthDate" name="BirthDate" class="form-control datepicker" required />
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label">Address : </label>
+                <input type="text" name="address" id="address" />
+            </div>
+            <div class="form-date">
+                <label for="EnrollmentDate" class="form-label">Enrollment Date [mm-dd-yyyy] : </label>
+                <input type="text" id="EnrollmentDate" name="EnrollmentDate" class="form-control datepicker" required />
+            </div>
+                <div class="form-group" id="buttons">
+                    <input type="button" name="savebutton" id="savebutton" class="form-control btn btn-primary" value="submit" onclick="registerStudent();">
+                    <input type="button" name="update" id="update" class="form-control btn " value="update" onclick="updateStudent();"> 
+                    <input type="button" name="reset" id="reset" class="form-control btn" value="reset" onclick="resetForm();">
+                </div>
+            </form>
+        </div>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script src="index.js"></script>
+        <script>
+            $(function () {
+                $('.datepicker').datepicker({
+                    format: 'mm-dd-yyyy'
+                });
+            });
+        </script>
+    </body>
+</html>
