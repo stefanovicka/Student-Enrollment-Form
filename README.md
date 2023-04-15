@@ -29,3 +29,7 @@ This is a microproject Student Enrollment Form created with JsonPowerDB which wi
 - Created database SCHOOL-DB
 - Created relation STUDENT_TABLE
 - Added data validation through js 
+
+![Example_1](https://user-images.githubusercontent.com/129623494/232231276-54888348-0d12-4eb4-9bcd-a757b29a6bfe.png)
+![Example_2](https://user-images.githubusercontent.com/129623494/232231283-ff12fab4-aa30-46d9-997c-c56ec371564e.png)
+![Example_3](https://user-images.githubusercontent.com/129623494/232231285-a2bc7820-28e0-4713-80c4-9a8f00e7cf41.png)
